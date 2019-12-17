@@ -14,8 +14,7 @@ Vue.config.productionTip = false
 
 NProgress.start();
 NProgress.done();
-// $(document).on('pjax:start', function() { NProgress.start(); });
-// $(document).on('pjax:end',   function() { NProgress.done();  });
+
 
 new Vue({
   router,

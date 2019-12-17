@@ -4,7 +4,7 @@ loadProgressBar()
 export default {
     getGallery ({section, sort, window, page, showViral}) {
         // http://localhost:8888/proxy-eurowings-imgur/api/v1/hot/viral/day/0?showViral=true
-        return axios.get(`http://localhost:8888/proxy-eurowings-imgur/api/v1/${section}/${sort}/${window}/${page}?showViral=${showViral}`).then(response => {
+        return axios.get(`/proxy-eurowings-imgur/api/v1/${section}/${sort}/${window}/${page}?showViral=${showViral}`).then(response => {
             return response.data.data
             .map(card_data => {
                 let link,type,description;
