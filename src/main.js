@@ -1,9 +1,21 @@
+import "@babel/polyfill";
+
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './store'
 
+import NProgress from 'nprogress';
+
+import 'bootstrap/scss/bootstrap-reboot.scss';
+import 'bootstrap/scss/bootstrap-grid.scss';
+
 Vue.config.productionTip = false
+
+NProgress.start();
+NProgress.done();
+// $(document).on('pjax:start', function() { NProgress.start(); });
+// $(document).on('pjax:end',   function() { NProgress.done();  });
 
 new Vue({
   router,

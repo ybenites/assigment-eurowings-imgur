@@ -1,18 +1,25 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <section>
+      <header>
+        <GroupControls></GroupControls>
+      </header>
+      <main>
+        <GalleryGrid></GalleryGrid>
+      </main>
+  </section>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import GroupControls from '@/components/GroupControls.vue';
+import GalleryGrid from '@/components/GallleryGrid.vue';
+
 
 export default {
   name: 'home',
   components: {
-    HelloWorld
+    GroupControls,
+    GalleryGrid
   }
 }
 </script>
